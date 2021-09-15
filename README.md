@@ -4,9 +4,14 @@ John J robert
 
 Live Link: [Todo List App](http://localhost:8000)
 
-Adding changes to Github
+## Adding changes to Github
+
 to start initial connection to git repo
 git push --set-upstream origin name-of-branch
+
+## add semantic
+
+npm i -s semantic-ui-css semantic-ui-react
 
 add all changes
 
@@ -20,7 +25,7 @@ push them to github
 
 3. git push
 
-making a new branch
+## making a new branch
 
 Step 1) Create new branch
 git branch name-of-new-branch
