@@ -1,4 +1,5 @@
-#Todo List
+# Todo List
+
 John J robert
 
 Live Link: [Todo List App](http://localhost:8000)
@@ -11,6 +12,21 @@ add all changes
 
 1. git add .
 
-commit them and add message 2) git commit -m "message here"
+commit them and add message
 
-push them to github 3) git push
+2. git commit -m "message here"
+
+push them to github
+
+3. git push
+
+making a new branch
+
+Step 1) Create new branch
+git branch name-of-new-branch
+
+Step 2) Switch to branch
+git checkout name-of-branch
+
+Step 3)
+git push --set-upstream origin name-of-branch
