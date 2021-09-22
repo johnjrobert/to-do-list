@@ -1,7 +1,11 @@
 import React from "react";
 import { Button, Grid, List, Label } from "semantic-ui-react";
 
-const Task = ({ name, color }) => {
+const Task = ({ name, color, editTask, index }) => {
+  function editCurrentTask() {
+    editTask(index);
+  }
+
   console.log(name, color);
   return (
     <React.Fragment>
@@ -14,7 +18,11 @@ const Task = ({ name, color }) => {
           </Grid.Column>
           <Grid.Column textAlign="right">
             <Button icon="trash" color="red"></Button>
-            <Button icon="pencil" color="orange"></Button>
+            <Button
+              icon="pencil"
+              color="orange"
+              onClick={editCurrentTask}
+            ></Button>
           </Grid.Column>
         </Grid>
       </List.Item>
