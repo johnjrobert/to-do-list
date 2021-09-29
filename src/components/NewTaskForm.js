@@ -6,6 +6,7 @@ import {
   Select,
   Header,
   Input,
+  Rating,
 } from "semantic-ui-react";
 
 const NewTaskForm = ({ closeNewTask, newTask, setNewTask, addNewTask }) => {
@@ -42,6 +43,21 @@ const NewTaskForm = ({ closeNewTask, newTask, setNewTask, addNewTask }) => {
             onChange={changeNewTask}
             name="color"
           />
+
+          {/* <Form.Field
+            control={Select}
+            label="Task Rating"
+            placeholder="Choose Importance"
+            options={[
+              { text: "Red", value: "red" },
+              { text: "Yellow", value: "yellow" },
+              { text: "Green", value: "green" },
+            ]}
+            // value={newTask.color}
+            // onChange={changeNewTask}
+            name="rating"
+          /> */}
+
           <Button.Group fluid>
             <Button color="red" onClick={closeNewTask}>
               Cancel
