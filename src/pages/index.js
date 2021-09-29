@@ -1,6 +1,15 @@
 import React from "react";
 import "semantic-ui-css/semantic.css";
-import { Container, Header, Button, Grid, List } from "semantic-ui-react";
+import {
+  Container,
+  Header,
+  Button,
+  Grid,
+  List,
+  Rating,
+  Segment,
+  Popup,
+} from "semantic-ui-react";
 import Task from "../components/Task.js";
 import NewTaskForm from "../components/NewTaskForm.js";
 
@@ -44,7 +53,7 @@ const HomePage = () => {
         return task;
       }
       return {
-        name: `Edit ${task.name}`,
+        name: `Edit ${task.onClick}`,
         color: task.color,
       };
     });
@@ -52,19 +61,40 @@ const HomePage = () => {
     setList(newList);
   }
 
-  function deleteTask() {
+  function deleteTask(index) {
     //array.filter
+    const newList = list.filter((task, i) => {
+      if (i == index) {
+        return task;
+      }
+    });
+    console.log("Delete");
+
+    setList(newList);
   }
 
   const taskList = list.map((task, index) => {
     return (
-      <Task
-        key={`${task.name}-${index}`}
-        name={task.name}
-        color={task.color}
-        editTask={editTask}
-        index={index}
-      ></Task>
+      <Popup
+        trigger={
+          <Segment>
+            <Task
+              key={`${task.name}-${index}`}
+              name={task.name}
+              color={task.color}
+              editTask={editTask}
+              deleteTask={deleteTask}
+              index={index}
+            ></Task>
+            <Rating icon="star" defaultRating={3} maxRating={4} clearable />
+          </Segment>
+        }
+      >
+        <Popup.Header>Task Importance</Popup.Header>
+        <Popup.Content>
+          <Rating icon="star" defaultRating={3} maxRating={4} />
+        </Popup.Content>
+      </Popup>
     );
   });
 
