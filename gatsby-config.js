@@ -5,5 +5,5 @@ module.exports = {
     title: "To-Do-List",
   },
   plugins: [],
-  pathPrefix: "/~jrobert/n322/todo-list",
+  pathPrefix: "/~jrobert/n322/to-do-list",
 };
