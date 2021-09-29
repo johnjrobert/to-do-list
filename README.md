@@ -6,7 +6,7 @@ This did not go well.  I spent most of the time trying to trouble shoot why I co
 
 Live Link: [Todo List App]("https://in-info-web4.informatics.iupui.edu/~jrobert/n322/public")
 
-https://in-info-web4.informatics.iupui.edu/~jrobert/n322/public
+https://in-info-web4.informatics.iupui.edu/~jrobert/n322/to-do-list
 
 ## Adding changes to Github
 
