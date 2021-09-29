@@ -2,7 +2,7 @@
 
 John J robert
 
-Live Link: [Todo List App]("https://in-info-web4.informatics.iupui.edu/~jrobert/n322/public)
+Live Link: [Todo List App]("https://in-info-web4.informatics.iupui.edu/~jrobert/n322/public")
 
 ## Adding changes to Github
 
